@@ -1,0 +1,11 @@
+{
+  "name": "cordova-core-tests",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "cordova-core-tests",
+    "platforms": []
+  },
+  "author": "Adobe",
+  "license": "Apache 2.0"
+}

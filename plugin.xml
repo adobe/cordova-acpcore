@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-acpcore"
+    version="0.0.1"
+    xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>cordova-acpcore</name>
+    <description>ACPCore Plugin for Cordova</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,adobe,core,acpcore,marketing</keywords>
+
+    <!-- use "ACPCore" to access the ACPCore APIs in javascript -->
+    <js-module name="cordova-acpcore" src="www/ACPCore.js">
+        <clobbers target="ACPCore" />
+    </js-module>
+    <!-- use "ACPIdentity" to access the ACPIdentity APIs in javascript -->
+    <js-module name="cordova-acpidentity" src="www/ACPIdentity.js">
+        <clobbers target="ACPIdentity" />
+    </js-module>
+    <!-- use "ACPLifecycle" to access the ACPLifecycle APIs in javascript -->
+    <js-module name="cordova-acplifecycle" src="www/ACPLifecycle.js">
+        <clobbers target="ACPLifecycle" />
+    </js-module>
+    <!-- use "ACPSignal" to access the ACPSignal APIs in javascript -->
+    <js-module name="cordova-acpsignal" src="www/ACPSignal.js">
+        <clobbers target="ACPSignal" />
+    </js-module>
+
+    <!-- configure android platform -->
+    <platform name="android">
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ACPCore_Cordova">
+                <param name="android-package"
+                    value="com.adobe.marketing.mobile.cordova.ACPCore_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ACPIdentity_Cordova">
+                <param name="android-package"
+                    value="com.adobe.marketing.mobile.cordova.ACPIdentity_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ACPLifecycle_Cordova">
+                <param name="android-package"
+                    value="com.adobe.marketing.mobile.cordova.ACPLifecycle_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="res/xml/config.xml">
+            <feature name="ACPSignal_Cordova">
+                <param name="android-package"
+                    value="com.adobe.marketing.mobile.cordova.ACPSignal_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <!-- add required permissions to AndroidManifest.xml -->
+        <config-file parent="/manifest" target="AndroidManifest.xml">
+            <uses-permission android:name="android.permission.INTERNET" />
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+        </config-file>
+        <!-- plugin source -->
+        <source-file src="src/android/ACPCore_Cordova.java"
+            target-dir="src/com/adobe/marketing/mobile/cordova" />
+        <source-file src="src/android/ACPIdentity_Cordova.java"
+            target-dir="src/com/adobe/marketing/mobile/cordova" />
+        <source-file src="src/android/ACPLifecycle_Cordova.java"
+            target-dir="src/com/adobe/marketing/mobile/cordova" />
+        <source-file src="src/android/ACPSignal_Cordova.java"
+            target-dir="src/com/adobe/marketing/mobile/cordova" />
+        <!-- dependencies managed through included gradle file -->
+        <framework custom="true" src="src/android/ACPCore_Cordova.gradle" type="gradleReference" />
+    </platform>
+
+    <!-- configure ios platform -->
+    <platform name="ios">
+        <config-file parent="/*" target="config.xml">
+            <feature name="ACPCore_Cordova">
+                <param name="ios-package" value="ACPCore_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="config.xml">
+            <feature name="ACPIdentity_Cordova">
+                <param name="ios-package" value="ACPIdentity_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="config.xml">
+            <feature name="ACPLifecycle_Cordova">
+                <param name="ios-package" value="ACPLifecycle_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+        <config-file parent="/*" target="config.xml">
+            <feature name="ACPSignal_Cordova">
+                <param name="ios-package" value="ACPSignal_Cordova" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <!-- plugin source -->
+        <source-file src="src/ios/ACPCore_Cordova.m" />
+        <source-file src="src/ios/ACPIdentity_Cordova.m" />
+        <source-file src="src/ios/ACPLifecycle_Cordova.m" />
+        <source-file src="src/ios/ACPSignal_Cordova.m" />
+        <!-- dependencies -->
+        <framework src="libsqlite3.dylib" />
+        <framework src="SystemConfiguration.framework" />
+        <!-- sdk source for ios managed by cocoapods -->
+        <podspec>
+            <config>
+                <source url="https://github.com/CocoaPods/Specs.git" />
+            </config>
+            <pods use-frameworks="true">
+                <pod name="ACPCore" spec=">= 2.5.0" />
+            </pods>
+        </podspec>
+    </platform>
+</plugin>
