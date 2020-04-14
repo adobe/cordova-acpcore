@@ -50,5 +50,6 @@ jobs:
 
     - name: build android and ios
       run: |
-        cordova-paramedic --platform ios --plugin . --justbuild
-        cordova-paramedic --platform android --plugin . --justbuild
+        cordova-paramedic --platform android --plugin . --justbuild --verbose
+        cordova-paramedic --platform ios --plugin . --justbuild --verbose --timeout 900000
+
