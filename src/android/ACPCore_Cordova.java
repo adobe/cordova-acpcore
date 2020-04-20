@@ -398,12 +398,12 @@ public class ACPCore_Cordova extends CordovaPlugin {
         return map;
     }
 
-    private Event getEventFromMap(final HashMap<String, Object> event) {
+    private Event getEventFromMap(final HashMap<String, Object> event) throws Exception {
         return new Event.Builder(
                 event.get("name").toString(),
                 event.get("type").toString(),
                 event.get("source").toString()
-        ).setEventData((HashMap<String, Object>)event.get("data")).build();
+        ).setEventData(getObjectMapFromJSON(new JSONObject(event.get("data").toString()))).build();
     }
 
     private HashMap<String, Object> getMapFromEvent(final Event event) {
