@@ -7,7 +7,7 @@
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
 - [Usage](#usage)
-    - [Installation](#installation)
+    - [Initialization](#initialization)
     - [Core methods](#core-methods)
     - [Lifecycle methods](#lifecycle-methods)
     - [Signals methods](#signals-methods)
@@ -243,7 +243,7 @@ ACPIdentity.getExperienceCloudId(function(cloudId) {
 > Note: We recommend implementing Lifecycle in native [Android and iOS code](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core/lifecycle).
 
 ##### Getting Lifecycle version:
- ```js
+```js
 ACPLifecycle.extensionVersion(function(version) {
     console.log(version);
 }, function(error) {
@@ -277,6 +277,7 @@ cordova-paramedic --platform android --plugin . --verbose
 
 ## Contributing
 Looking to contribute to this project? Please review our [Contributing guidelines](.github/CONTRIBUTING.md) prior to opening a pull request.
+
 We look forward to working with you!
 
 ## Licensing
