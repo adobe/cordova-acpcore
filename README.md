@@ -12,6 +12,7 @@
     - [Lifecycle methods](#lifecycle-methods)
     - [Signals methods](#signals-methods)
 - [Running Tests](#running-tests)
+- [Sample App](#sample-app)  
 - [Contributing](#contributing)
 - [Licensing](#licensing)
 
@@ -274,6 +275,10 @@ cordova-paramedic --platform ios --plugin . --verbose
 ```
 cordova-paramedic --platform android --plugin . --verbose
 ```
+
+## Sample App
+
+A Cordova app for testing the plugin is located in the `https://github.com/adobe/cordova-acpsample`. The app is configured for both iOS and Android platforms.  
 
 ## Contributing
 Looking to contribute to this project? Please review our [Contributing guidelines](.github/CONTRIBUTING.md) prior to opening a pull request.
