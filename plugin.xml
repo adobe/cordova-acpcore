@@ -113,7 +113,7 @@
                 <source url="https://github.com/CocoaPods/Specs.git" />
             </config>
             <pods use-frameworks="true">
-                <pod name="ACPCore" spec=">= 2.5.0" />
+                <pod name="ACPCore" spec=">= 2.6.1" />
             </pods>
         </podspec>
     </platform>

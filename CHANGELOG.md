@@ -1,2 +1,2 @@
-### 1.0.0 (25 Mar, 2019)
-- Initial release of ACPCore plugin for Cordova
+### 0.0.1 (21 Apr, 2020)
+- Initial release of Adobe Experience Platform - Core plugin for Cordova apps

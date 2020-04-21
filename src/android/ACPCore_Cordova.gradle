@@ -1,4 +1,4 @@
 dependencies {
     // adobe
-    api 'com.adobe.marketing.mobile:sdk-core:1.+'    
+    api 'com.adobe.marketing.mobile:sdk-core:[1.5.3,)'
 }
