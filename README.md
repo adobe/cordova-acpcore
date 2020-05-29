@@ -283,7 +283,7 @@ A Cordova app for testing the plugin is located in the `https://github.com/adobe
 
 ## Additional Cordova Plugins
 
-Below is the list of additional Cordova plugins from the AEP SDK suite:
+Below is a list of additional Cordova plugins from the AEP SDK suite:
 
 | Extension | GitHub | npm |
 |-----------|--------|-----|
