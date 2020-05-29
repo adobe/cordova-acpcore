@@ -283,7 +283,7 @@ A Cordova app for testing the plugin is located in the `https://github.com/adobe
 
 ## Additional Cordova Plugins
 
-After installing the Core plugin, you may need to include other plugins from the AEP SDK suite:
+Below is the list of additional Cordova plugins from the AEP SDK suite:
 
 | Extension | GitHub | npm |
 |-----------|--------|-----|
