@@ -13,6 +13,7 @@
     - [Signals methods](#signals-methods)
 - [Running Tests](#running-tests)
 - [Sample App](#sample-app)  
+- [Additional Cordova Plugins](#additional-cordova-plugins)
 - [Contributing](#contributing)
 - [Licensing](#licensing)
 
@@ -280,10 +281,22 @@ cordova-paramedic --platform android --plugin . --verbose
 
 A Cordova app for testing the plugin is located in the `https://github.com/adobe/cordova-acpsample`. The app is configured for both iOS and Android platforms.  
 
+## Additional Cordova Plugins
+
+After installing the Core plugin, you may wish to include other plugins from the AEP SDK suite:
+
+| Extension | GitHub | npm |
+|-----------|--------|-----|
+| Adobe Analytics | https://github.com/adobe/cordova-acpanalytics | [![npm](https://img.shields.io/npm/v/@adobe/cordova-acpanalytics)](https://www.npmjs.com/package/@adobe/cordova-acpanalytics)
+| Project Griffon (Beta) | https://github.com/adobe/cordova-acpgriffon | [![npm](https://img.shields.io/npm/v/@adobe/cordova-acpgriffon)](https://www.npmjs.com/package/@adobe/cordova-acpgriffon)
+
+
 ## Contributing
+
 Looking to contribute to this project? Please review our [Contributing guidelines](.github/CONTRIBUTING.md) prior to opening a pull request.
 
 We look forward to working with you!
 
 ## Licensing
+
 This project is licensed under the Apache V2 License. See [LICENSE](LICENSE) for more information.
