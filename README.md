@@ -279,7 +279,7 @@ cordova-paramedic --platform android --plugin . --verbose
 
 ## Sample App
 
-A Cordova app for testing the plugin is located in the `https://github.com/adobe/cordova-acpsample`. The app is configured for both iOS and Android platforms.  
+A Cordova app for testing the Adobe SDK plugins is located at [https://github.com/adobe/cordova-acpsample](https://github.com/adobe/cordova-acpsample). The app is configured for both iOS and Android platforms.  
 
 ## Additional Cordova Plugins
 
