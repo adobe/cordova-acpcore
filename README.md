@@ -2,7 +2,7 @@
 
 [![CI](https://github.com/adobe/cordova-acpcore/workflows/CI/badge.svg)](https://github.com/adobe/cordova-acpcore/actions)
 [![npm](https://img.shields.io/npm/v/@adobe/cordova-acpcore)](https://www.npmjs.com/package/@adobe/cordova-acpcore)
-[![GitHub](https://img.shields.io/github/license/adobe/cordova-acpcore)](https://github.com/adobe/cordova-acpcore/blob/master/LICENSE)
+[![GitHub](https://img.shields.io/github/license/adobe/cordova-acpcore)](https://github.com/adobe/cordova-acpcore/blob/main/LICENSE)
 
 - [Prerequisites](#prerequisites)
 - [Installation](#installation)
