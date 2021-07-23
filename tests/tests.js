@@ -95,9 +95,9 @@ exports.defineAutoTests = function() {
             ACPCore.getPrivacyStatus(function() {}, "error")
             expect(console.log).toHaveBeenCalled();
         });
-        it('check if the result is a string', function(done) {
+        it('check if the result is a number', function(done) {
             ACPCore.getPrivacyStatus(function(result) {
-                expect(typeof result === "string").toBe(true);
+                expect(typeof result === "number").toBe(true);
                 done();
             }, function() {});
         })
