@@ -150,7 +150,7 @@
 
 - (void) setLogLevel:(CDVInvokedUrlCommand*)command {
     [self.commandDelegate runInBackground:^{
-        ACPMobileLogLevel logLevel = (ACPMobileLogLevel)[self getCommandArg:command.arguments[0]];
+        ACPMobileLogLevel logLevel = (ACPMobileLogLevel)[[self getCommandArg:command.arguments[0]] intValue];
 
         [ACPCore setLogLevel:logLevel];
 
