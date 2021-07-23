@@ -161,7 +161,7 @@
 
 - (void) setPrivacyStatus:(CDVInvokedUrlCommand*)command {
     [self.commandDelegate runInBackground:^{
-        ACPMobilePrivacyStatus privacyStatus = (ACPMobilePrivacyStatus)[self getCommandArg:command.arguments[0]];
+        ACPMobilePrivacyStatus privacyStatus = (ACPMobilePrivacyStatus)[[self getCommandArg:command.arguments[0]] intValue];
 
         [ACPCore setPrivacyStatus:privacyStatus];
 
