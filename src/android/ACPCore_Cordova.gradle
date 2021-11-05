@@ -1,4 +1,6 @@
 dependencies {
     // adobe
-    api 'com.adobe.marketing.mobile:sdk-core:[1.5.3,)'
+	implementation 'com.adobe.marketing.mobile:userprofile:1.+'
+	implementation 'com.adobe.marketing.mobile:sdk-core:1.+'
+	api 'com.adobe.marketing.mobile:sdk-core:[1.5.3,)'
 }
